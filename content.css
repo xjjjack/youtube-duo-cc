@@ -1,0 +1,8 @@
+#duo-cc-overlay { position: absolute; bottom: 14%; left: 5%; width: 90%; z-index: 40; text-align: center; pointer-events: none; font-family: Arial, sans-serif; font-size: clamp(16px, 2.4vw, 32px); line-height: 1.4; }
+#duo-cc-overlay[hidden] { display: none; }
+#duo-cc-overlay .duo-line { margin: 4px auto; white-space: pre-line; overflow-wrap: anywhere; }
+#duo-cc-overlay .duo-line span { padding: 3px 8px; background: rgba(0,0,0,.82); color: #ffe08a; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.ytp-button.duo-button { position: relative; width: 48px !important; padding: 0 !important; color: #fff; vertical-align: top; }
+.duo-button .duo-button-label { position: absolute; inset: 0; display: grid; place-items: center; font: 700 13px/1 Arial, sans-serif; text-align: center; pointer-events: none; }
+.duo-button[aria-pressed="true"] .duo-button-label { color: #ffe08a; text-decoration: underline; text-underline-offset: 5px; }
+.duo-sr-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }

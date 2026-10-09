@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Duo CC",
+  "version": "2.0.0",
+  "description": "Keep the previous YouTube caption track visible when switching CC languages.",
+  "minimum_chrome_version": "111",
+  "action": { "default_popup": "popup.html", "default_title": "YouTube Duo CC" },
+  "content_scripts": [
+    { "matches": ["https://www.youtube.com/*"], "js": ["bridge.js"], "run_at": "document_start", "world": "MAIN" },
+    { "matches": ["https://www.youtube.com/*"], "js": ["captions.js", "queue.js", "content.js"], "css": ["content.css"], "run_at": "document_idle" }
+  ]
+}

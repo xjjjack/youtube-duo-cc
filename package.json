@@ -1,0 +1,7 @@
+{
+  "name": "youtube-duo-cc",
+  "version": "2.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": { "test": "node --test tests/captions.test.cjs tests/bridge.test.cjs tests/queue.test.cjs", "check": "node --check bridge.js && node --check captions.js && node --check queue.js && node --check content.js" }
+}
